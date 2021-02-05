@@ -1,7 +1,27 @@
-// Import partials.
-    // @import "variables";
-    // @import "mixins";
-    // @import "setup";
-    // @import "navigation";
+    // $ice-blue: #EAFEFC;
+    // $dandelion: #FDD908;
+    // $twilight-blue: #0d457f;
+    
+    // $main-heading: 79px;
+    // $secondary-heading: 45px;
+    // $box-heading: 40px;
+    // $side-heading: 25px; 
+    // $body-text: 20px;
+    // $button-text: 22.4px;
+    // $nav-text: 20px;
+
+
+    @import "variables";
+    @import "setup";
+
+    body{
+        color: $ice-blue;
+    }
+
+    header h1{
+        font-size: $main-heading;
+    }
+
+
 
 // Global CSS would go below.
