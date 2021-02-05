@@ -274,6 +274,12 @@ h1 {
           align-items: flex-end;
 }
 
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
 html {
   font-size: 62.5%;
 }
