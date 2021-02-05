@@ -234,3 +234,71 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+header {
+  background: url(../assets/home-header.jpg) bottom/cover;
+  height: 40vh;
+  padding-top: 40px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav li {
+  margin-right: 40px;
+}
+
+header ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 79px;
+  font-family: 'IM Fell English', serif;
+  text-transform: uppercase;
+  color: #FDD908;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}

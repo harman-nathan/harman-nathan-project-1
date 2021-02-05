@@ -1,0 +1,30 @@
+header {
+    background: url(../assets/home-header.jpg) bottom / cover;
+    height: 40vh;
+    padding-top: 40px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav li {
+    margin-right: 40px;
+}
+
+header ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: $main-heading;
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase;
+    color: $dandelion;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
