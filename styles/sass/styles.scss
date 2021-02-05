@@ -1,27 +1,19 @@
-    // $ice-blue: #EAFEFC;
-    // $dandelion: #FDD908;
-    // $twilight-blue: #0d457f;
-    
-    // $main-heading: 79px;
-    // $secondary-heading: 45px;
-    // $box-heading: 40px;
-    // $side-heading: 25px; 
-    // $body-text: 20px;
-    // $button-text: 22.4px;
-    // $nav-text: 20px;
+// $ice-blue: #EAFEFC;
+// $dandelion: #FDD908;
+// $twilight-blue: #0d457f;
 
+// $main-heading: 79px;
+// $secondary-heading: 45px;
+// $box-heading: 40px;
+// $side-heading: 25px; 
+// $body-text: 20px;
+// $button-text: 22.4px;
+// $nav-text: 20px;
 
-    @import "variables";
-    @import "setup";
+// font-family: 'IM Fell English', serif;
+// font-family: 'Roboto', sans-serif;
 
-    body{
-        color: $ice-blue;
-    }
-
-    header h1{
-        font-size: $main-heading;
-    }
-
-
+@import "variables";
+@import "setup";
 
 // Global CSS would go below.
