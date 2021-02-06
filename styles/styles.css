@@ -237,7 +237,7 @@ html {
 
 header {
   background: url(../assets/home-header.jpg) bottom/cover;
-  height: 40vh;
+  height: 70vh;
   padding-top: 40px;
 }
 
@@ -256,7 +256,7 @@ header ul {
 }
 
 h1 {
-  font-size: 79px;
+  font-size: 7.9rem;
   font-family: 'IM Fell English', serif;
   text-transform: uppercase;
   color: #FDD908;
@@ -277,7 +277,7 @@ h1 {
 header a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 html {
@@ -307,6 +307,35 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+
+h2,
+h3,
+.button {
+  font-family: 'IM Fell English', serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+.new-destinations h2,
+.vacation-days h2,
+.win-trip h2 {
+  color: #0d457f;
+}
+
+.our-programs {
+  color: white;
+}
+
+.button {
+  font-size: 2.24rem;
+  color: #0d457f;
+  background-color: #FDD908;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 section:nth-child(odd) {
@@ -365,4 +394,15 @@ section:nth-child(even) {
   -webkit-box-flex: 70%;
       -ms-flex: 70%;
           flex: 70%;
+}
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer {
+  background-color: #FDD908;
+  text-align: center;
 }

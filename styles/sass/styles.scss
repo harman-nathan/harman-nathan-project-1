@@ -2,13 +2,14 @@
 // $dandelion: #FDD908;
 // $twilight-blue: #0d457f;
 
-// $main-heading: 79px;
-// $secondary-heading: 45px;
-// $box-heading: 40px;
-// $side-heading: 25px; 
-// $body-text: 20px;
-// $button-text: 22.4px;
-// $nav-text: 20px;
+// Font sizes
+// $main-heading: 7.9rem;
+// $secondary-heading: 4.5rem;
+// $box-heading: 4rem;
+// $side-heading: 2.5rem; 
+// $body-text: 2rem;
+// $button-text: 2.24rem;
+// $nav-text: 2rem;
 
 // font-family: 'IM Fell English', serif;
 // font-family: 'Roboto', sans-serif;
@@ -47,6 +48,36 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+h2,
+h3,
+.button{
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: $secondary-heading;
+}
+
+.new-destinations h2,
+.vacation-days h2,
+.win-trip h2{
+    color: $twilight-blue;
+}
+
+.our-programs{
+    color: white;
+}
+
+.button{
+    font-size: $button-text;
+    color: $twilight-blue;
+    background-color: $dandelion;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
 
 // general section styles
 
@@ -99,4 +130,17 @@ section:nth-child(even){
 
 .trip-text{
     flex: 70%;
+}
+
+// section gallery
+
+.gallery-container{
+    display: flex;
+}
+
+// footer
+
+footer{
+    background-color: $dandelion;
+    text-align: center;
 }
