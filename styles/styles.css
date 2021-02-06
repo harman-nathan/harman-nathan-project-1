@@ -295,8 +295,91 @@ header nav a:active {
 
 .header-image {
   position: absolute;
-  top: 15vh;
-  right: -5vw;
+  top: 150px;
+  right: -200px;
+}
+
+.contact-header {
+  background: url(../assets/contact-header.jpg) center/cover;
+  position: relative;
+  height: 70vh;
+  padding: 50px 0;
+}
+
+.contact-header h1 {
+  color: white;
+  position: absolute;
+  top: 220px;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.contact ul li {
+  padding: 0 2rem 1rem 0;
+}
+
+.contact-container p:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  width: 60%;
+}
+
+form {
+  border: 1px solid #0d457f;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 20px 20px #FDD908;
+          box-shadow: 20px 20px #FDD908;
+  background-color: #0d457f;
+}
+
+.contact-form input {
+  border: none;
+  margin: 20px 50px;
+  padding: 0 0 15px 15px;
+  border-bottom: 3px solid #FDD908;
+  background-color: transparent;
+  color: white;
+}
+
+.contact-form textarea {
+  border: none;
+  margin: 20px 50px;
+  padding: 15px 0 0 15px;
+  border: 3px solid #FDD908;
+  background-color: transparent;
+  color: white;
+}
+
+.contact-form button {
+  font-size: 2.24rem;
+  color: #0d457f;
+  background-color: #FDD908;
+  border: none;
+  padding: 10px 20px;
+  margin: 25px;
 }
 
 .destinations,
@@ -439,6 +522,7 @@ ul {
 h1,
 h2,
 h3,
+button,
 .button {
   font-family: 'IM Fell English', serif;
   font-weight: normal;

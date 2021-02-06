@@ -1,6 +1,5 @@
 header {
     background: url(../assets/home-header.jpg) center / cover;
-    // height: 40vh;
     padding: 50px 0;
     height: 50vh;
     position: relative;
@@ -52,6 +51,8 @@ header nav a:active {
 
 .header-image {
     position: absolute;
-    top: 15vh;
-    right: -5vw;
+    // top: 15vh;
+    // right: -5vw;
+    top: 150px;
+    right: -200px;
 }

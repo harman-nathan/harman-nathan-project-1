@@ -1,0 +1,71 @@
+.contact-header {
+    background: url(../assets/contact-header.jpg) center / cover;
+    position: relative;
+    height: 70vh;
+    padding: 50px 0;
+}
+
+.contact-header h1 {
+    color: white;
+    position: absolute;
+    top: 220px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact ul {
+    display: flex;
+    list-style: none;
+}
+
+.contact ul li {
+    padding:0 2rem 1rem 0;
+}
+
+.contact-container p:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    width: 60%;
+}
+
+form {
+    border: 1px solid $twilight-blue;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 20px 20px $dandelion;
+    background-color: $twilight-blue;
+}
+
+.contact-form input {
+    border: none;
+    margin: 20px 50px;
+    padding: 0 0 15px 15px;
+    border-bottom: 3px solid $dandelion;
+    background-color: transparent;
+    color: white;
+}
+
+.contact-form textarea {
+    border: none;
+    margin: 20px 50px;
+    padding: 15px 0 0 15px;
+    border: 3px solid $dandelion;
+    background-color: transparent;
+    color: white;
+}
+
+.contact-form button {
+    // display: inline-block;
+    font-size: $button-text;
+    color: $twilight-blue;
+    background-color: $dandelion;
+    border: none;
+    padding: 10px 20px;
+    margin: 25px;
+}
