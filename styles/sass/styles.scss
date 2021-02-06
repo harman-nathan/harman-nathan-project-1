@@ -54,6 +54,7 @@ h2,
 h3,
 .button {
     font-family: 'IM Fell English', serif;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -74,12 +75,20 @@ h2 {
 
 .button {
     display: inline-block;
+    text-decoration: none;
     font-size: $button-text;
     color: $twilight-blue;
     background-color: $dandelion;
     padding: 10px 20px;
-    text-decoration: none;
     margin-top: 25px;
+}
+
+.shadow-left {
+    box-shadow: -15px 15px $dandelion;
+}
+
+.shadow-right {
+    box-shadow: 15px 15px $dandelion;
 }
 
 // General Section Styles
@@ -121,6 +130,11 @@ section {
     text-align: center;
 }
 
+.vacation-days div {
+    width: 80%;
+    margin: 0 auto;
+}
+
 // Banner Image Section
 .banner-image {
     padding: 0;
@@ -141,7 +155,8 @@ section {
 }
 
 .trip-text {
-    flex: 70%;
+    flex: calc(70% - 50px);
+    margin-left: 50px;
 }
 
 // Gallery Section
@@ -154,9 +169,25 @@ section {
     margin: 0 25px;
 }
 
-// footer
+// Footer
 
 footer {
     background-color: $dandelion;
+    color: $twilight-blue;
     text-align: center;
+    padding: 15px 0;
 }
+
+footer a {
+    text-decoration: none;
+    color: $twilight-blue;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
+
+// * {
+//     border: 1px solid red;
+// }

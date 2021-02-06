@@ -314,6 +314,7 @@ h2,
 h3,
 .button {
   font-family: 'IM Fell English', serif;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
@@ -334,12 +335,22 @@ h2 {
 
 .button {
   display: inline-block;
+  text-decoration: none;
   font-size: 2.24rem;
   color: #0d457f;
   background-color: #FDD908;
   padding: 10px 20px;
-  text-decoration: none;
   margin-top: 25px;
+}
+
+.shadow-left {
+  -webkit-box-shadow: -15px 15px #FDD908;
+          box-shadow: -15px 15px #FDD908;
+}
+
+.shadow-right {
+  -webkit-box-shadow: 15px 15px #FDD908;
+          box-shadow: 15px 15px #FDD908;
 }
 
 section:nth-child(odd) {
@@ -380,6 +391,11 @@ section {
   text-align: center;
 }
 
+.vacation-days div {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .banner-image {
   padding: 0;
 }
@@ -401,9 +417,10 @@ section {
 }
 
 .trip-text {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
+  -webkit-box-flex: calc(70% - 50px);
+      -ms-flex: calc(70% - 50px);
+          flex: calc(70% - 50px);
+  margin-left: 50px;
 }
 
 .gallery-container {
@@ -418,5 +435,17 @@ section {
 
 footer {
   background-color: #FDD908;
+  color: #0d457f;
   text-align: center;
+  padding: 15px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0d457f;
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
 }
