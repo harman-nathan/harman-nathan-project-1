@@ -49,28 +49,29 @@ ul {
     padding: 0;
 }
 
+h1,
 h2,
 h3,
-.button{
+.button {
     font-family: 'IM Fell English', serif;
     text-transform: uppercase;
 }
 
-h2{
+h2 {
     font-size: $secondary-heading;
 }
 
 .new-destinations h2,
 .vacation-days h2,
-.win-trip h2{
+.win-trip h2 {
     color: $twilight-blue;
 }
 
-.our-programs{
+.our-programs {
     color: white;
 }
 
-.button{
+.button {
     font-size: $button-text;
     color: $twilight-blue;
     background-color: $dandelion;
@@ -81,39 +82,55 @@ h2{
 
 // general section styles
 
-section:nth-child(odd){
+section:nth-child(odd) {
     background-color: $ice-blue;
 }
 
-section:nth-child(even){
+section:nth-child(even) {
     background-color: $twilight-blue;
+}
+
+section {
+    padding: 100px 0;
 }
 
 // section new-destination
 
-.destinations-container{
+.destinations-container {
     display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
-.destinations-container div{
-    flex: 50%;
+.new-destinations .wrapper:first-child {
+    margin-bottom: 50px;
+}
+
+.destinations-container div {
+    flex: calc(50% - 100px);
+}
+
+.destinations-left {
+    margin-right: 50px;
+}
+
+.destinations-right {
+    margin-left: 50px;
 }
 
 // section our-programs
 
-.programs-container{
+.programs-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.programs-container div{
+.programs-container div {
     flex: 50%;
 }
 
 // section vacation-days
 
-.vacation-days{
+.vacation-days {
     text-align: center;
 }
 
@@ -124,23 +141,23 @@ section:nth-child(even){
     // justify-content: space-between;
 }
 
-.trip-image{
+.trip-image {
     flex: 30%;
 }
 
-.trip-text{
+.trip-text {
     flex: 70%;
 }
 
 // section gallery
 
-.gallery-container{
+.gallery-container {
     display: flex;
 }
 
 // footer
 
-footer{
+footer {
     background-color: $dandelion;
     text-align: center;
 }

@@ -309,6 +309,7 @@ ul {
   padding: 0;
 }
 
+h1,
 h2,
 h3,
 .button {
@@ -346,18 +347,33 @@ section:nth-child(even) {
   background-color: #0d457f;
 }
 
+section {
+  padding: 100px 0;
+}
+
 .destinations-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.new-destinations .wrapper:first-child {
+  margin-bottom: 50px;
 }
 
 .destinations-container div {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  -webkit-box-flex: calc(50% - 100px);
+      -ms-flex: calc(50% - 100px);
+          flex: calc(50% - 100px);
+}
+
+.destinations-left {
+  margin-right: 50px;
+}
+
+.destinations-right {
+  margin-left: 50px;
 }
 
 .programs-container {
