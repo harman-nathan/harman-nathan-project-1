@@ -1,6 +1,6 @@
 header {
-    background: url(../assets/home-header.jpg) bottom / cover;
-    height: 70vh;
+    background: url(../assets/home-header.jpg) center / cover;
+    height: 40vh;
     padding-top: 40px;
 }
 
@@ -34,3 +34,7 @@ header a{
     color: white;
     font-size: $nav-text;
 }
+
+// * {
+//     border: 1px solid red;
+// }

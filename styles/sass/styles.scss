@@ -18,7 +18,7 @@
 @import "setup";
 @import "header";
 
-// Global CSS would go below.
+// Global Styles
 
 html {
     font-size: 62.5%;
@@ -59,6 +59,7 @@ h3,
 
 h2 {
     font-size: $secondary-heading;
+    margin-bottom: 25px;
 }
 
 .new-destinations h2,
@@ -72,15 +73,16 @@ h2 {
 }
 
 .button {
+    display: inline-block;
     font-size: $button-text;
     color: $twilight-blue;
     background-color: $dandelion;
     padding: 10px 20px;
     text-decoration: none;
+    margin-top: 25px;
 }
 
-
-// general section styles
+// General Section Styles
 
 section:nth-child(odd) {
     background-color: $ice-blue;
@@ -94,51 +96,44 @@ section {
     padding: 100px 0;
 }
 
-// section new-destination
+// New Destinations + Our Programs Sections
 
-.destinations-container {
-    display: flex;
-    margin-bottom: 50px;
-}
-
-.new-destinations .wrapper:first-child {
-    margin-bottom: 50px;
-}
-
-.destinations-container div {
-    flex: calc(50% - 100px);
-}
-
-.destinations-left {
-    margin-right: 50px;
-}
-
-.destinations-right {
-    margin-left: 50px;
-}
-
-// section our-programs
-
-.programs-container {
+.flex-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.programs-container div {
-    flex: 50%;
+.flex-container:first-child {
+    margin-bottom: 50px;
 }
 
-// section vacation-days
+.flex-container div {
+    flex: calc(50% - 50px);
+}
+
+.flex-container div:first-child {
+    margin-right: 50px;
+}
+
+// Vacation Days Section
 
 .vacation-days {
     text-align: center;
 }
 
-// section win-trip
+// Banner Image Section
+.banner-image {
+    padding: 0;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+// Win Trip Section
 
 .trip-container{
     display: flex;
-    // justify-content: space-between;
 }
 
 .trip-image {
@@ -149,10 +144,14 @@ section {
     flex: 70%;
 }
 
-// section gallery
+// Gallery Section
 
 .gallery-container {
     display: flex;
+}
+
+.gallery-container div:nth-child(2) {
+    margin: 0 25px;
 }
 
 // footer

@@ -236,8 +236,8 @@ html {
 }
 
 header {
-  background: url(../assets/home-header.jpg) bottom/cover;
-  height: 70vh;
+  background: url(../assets/home-header.jpg) center/cover;
+  height: 40vh;
   padding-top: 40px;
 }
 
@@ -319,6 +319,7 @@ h3,
 
 h2 {
   font-size: 4.5rem;
+  margin-bottom: 25px;
 }
 
 .new-destinations h2,
@@ -332,11 +333,13 @@ h2 {
 }
 
 .button {
+  display: inline-block;
   font-size: 2.24rem;
   color: #0d457f;
   background-color: #FDD908;
   padding: 10px 20px;
   text-decoration: none;
+  margin-top: 25px;
 }
 
 section:nth-child(odd) {
@@ -351,32 +354,7 @@ section {
   padding: 100px 0;
 }
 
-.destinations-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 50px;
-}
-
-.new-destinations .wrapper:first-child {
-  margin-bottom: 50px;
-}
-
-.destinations-container div {
-  -webkit-box-flex: calc(50% - 100px);
-      -ms-flex: calc(50% - 100px);
-          flex: calc(50% - 100px);
-}
-
-.destinations-left {
-  margin-right: 50px;
-}
-
-.destinations-right {
-  margin-left: 50px;
-}
-
-.programs-container {
+.flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,14 +362,30 @@ section {
       flex-wrap: wrap;
 }
 
-.programs-container div {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+.flex-container:first-child {
+  margin-bottom: 50px;
+}
+
+.flex-container div {
+  -webkit-box-flex: calc(50% - 50px);
+      -ms-flex: calc(50% - 50px);
+          flex: calc(50% - 50px);
+}
+
+.flex-container div:first-child {
+  margin-right: 50px;
 }
 
 .vacation-days {
   text-align: center;
+}
+
+.banner-image {
+  padding: 0;
+}
+
+.banner-image img {
+  width: 100%;
 }
 
 .trip-container {
@@ -416,6 +410,10 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.gallery-container div:nth-child(2) {
+  margin: 0 25px;
 }
 
 footer {
