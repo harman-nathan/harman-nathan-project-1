@@ -238,6 +238,8 @@ html {
 header {
   background: url(../assets/home-header.jpg) center/cover;
   padding: 50px 0;
+  height: 50vh;
+  position: relative;
 }
 
 header ul {
@@ -265,12 +267,10 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  height: 40vh;
 }
 
 header nav a {
@@ -289,8 +289,14 @@ header nav a:active {
   border-bottom: 4px solid #FDD908;
 }
 
-header img {
-  min-width: 350px;
+.header-text {
+  width: 40%;
+}
+
+.header-image {
+  position: absolute;
+  top: 15vh;
+  right: -5vw;
 }
 
 .destinations,
@@ -406,6 +412,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
   font-size: 2rem;
 }
 
@@ -483,6 +490,10 @@ section:nth-child(even) {
 
 section {
   padding: 100px 0;
+}
+
+.new-destinations {
+  padding-top: 250px;
 }
 
 .flex-container {
