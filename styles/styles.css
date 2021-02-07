@@ -295,8 +295,8 @@ header nav a:active {
 
 .header-image {
   position: absolute;
-  top: 150px;
-  right: -200px;
+  top: 15vh;
+  right: -5vw;
 }
 
 .contact-header {
@@ -474,7 +474,7 @@ form {
   color: #0d457f;
   position: absolute;
   left: -39px;
-  top: 5px;
+  top: 3px;
   z-index: 1;
 }
 
@@ -600,7 +600,7 @@ section {
 }
 
 .new-destinations {
-  padding-top: 250px;
+  padding-top: 25vh;
 }
 
 .flex-container {
@@ -623,6 +623,16 @@ section {
 
 .flex-container div:first-child {
   margin-right: 50px;
+}
+
+.flex-image:first-child {
+  margin-top: -10vh;
+  margin-left: -12vw;
+}
+
+.flex-image:last-child {
+  margin-bottom: -10vh;
+  margin-right: -12vw;
 }
 
 .vacation-days {
