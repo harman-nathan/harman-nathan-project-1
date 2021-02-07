@@ -302,6 +302,7 @@ header nav a:active {
 .contact-header {
   background: url(../assets/contact-header.jpg) center/cover;
   position: relative;
+  width: 100%;
   height: 70vh;
   padding: 50px 0;
 }
@@ -309,7 +310,7 @@ header nav a:active {
 .contact-header h1 {
   color: white;
   position: absolute;
-  top: 220px;
+  top: 200px;
 }
 
 .contact-container {
@@ -319,6 +320,12 @@ header nav a:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.social-icons {
+  width: 33%;
 }
 
 .contact ul {
@@ -332,17 +339,25 @@ header nav a:active {
   padding: 0 2rem 1rem 0;
 }
 
+.contact ul a {
+  text-decoration: none;
+  color: black;
+}
+
 .contact-container p:nth-of-type(1) {
   margin-bottom: 30px;
 }
 
 .contact-form {
-  width: 60%;
+  width: 65%;
+  position: absolute;
+  top: -250px;
+  right: 0;
 }
 
 form {
   border: 1px solid #0d457f;
-  padding-top: 50px;
+  padding: 60px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,22 +370,31 @@ form {
   background-color: #0d457f;
 }
 
+.form-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .contact-form input {
   border: none;
-  margin: 20px 50px;
   padding: 0 0 15px 15px;
-  border-bottom: 3px solid #FDD908;
+  border-bottom: 2px solid #FDD908;
   background-color: transparent;
   color: white;
+  width: 48%;
 }
 
 .contact-form textarea {
   border: none;
-  margin: 20px 50px;
   padding: 15px 0 0 15px;
-  border: 3px solid #FDD908;
+  border: 2px solid #FDD908;
   background-color: transparent;
   color: white;
+  margin: 40px 0;
 }
 
 .contact-form button {
@@ -378,8 +402,7 @@ form {
   color: #0d457f;
   background-color: #FDD908;
   border: none;
-  padding: 10px 20px;
-  margin: 25px;
+  padding: 10px 0;
 }
 
 .destinations,
