@@ -1,0 +1,106 @@
+// blog
+.blog-header {
+    background: url(../assets/blog-header.jpg) center / cover;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    padding: 50px 0;
+}
+.blog-header h1 {
+    color: white;
+    position: absolute;
+    top: 200px;
+}
+// aside
+.our-mission{
+    // width: 35%;
+    // margin-left: 10%;
+    background-color: $twilight-blue;
+    // margin-top: 150px;
+    // padding: 0 30px;
+}
+.our-mission ul{
+    list-style: none;
+    // margin-top: 20px;
+}
+.our-mission-text h3:nth-of-type(2){
+    margin-top: 50px;
+}
+.our-mission h3{
+    color: $dandelion;
+}
+.our-mission p,
+.our-mission ul li{
+    color: white;
+}
+// blog-container
+.blog-container{
+    display: flex;
+    justify-content: space-between;
+    margin:150px 0 ;
+}
+.our-mission{
+    width: 35%;
+}
+.blog-post{
+    width: 60%;
+}
+.our-mission-text{
+    padding: 30px;
+}
+.blog-post-text{
+    padding: 80px;
+    border-left: 5px solid $dandelion;
+    border-bottom: 5px solid $dandelion;
+}
+// comments section
+.comments{
+    padding: 80px;
+}
+.comments-container{
+    display: flex;
+    justify-content: space-between;
+}
+.comments-container:nth-child(2){
+    margin-bottom: 80px;
+}
+.comments-image{
+    width: 20%;
+}
+.comments-text{
+    width: 75%;
+}
+// form styles
+.blog-form form{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    // background-color: $twilight-blue;
+}
+.form-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-form input{
+    border: none;
+    padding: 0 0 15px 15px;
+    border-bottom: 2px solid $dandelion;
+    background-color: transparent;
+    color: black;
+    width: 48%;
+}
+.blog-form textarea {
+    border: none;
+    padding: 15px 0 0 15px;
+    border: 2px solid $dandelion;
+    background-color: transparent;
+    color: black;
+    margin: 40px 0;
+}
+.blog-form button {
+    font-size: $button-text;
+    color: $dandelion;
+    background-color: $twilight-blue;
+    border: none;
+    padding: 10px 0;
+}
