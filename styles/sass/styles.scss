@@ -109,10 +109,10 @@ section {
     padding: 100px 0;
 }
 
-// New Destinations + Our Programs Sections
+// New Destinations + Our Programs Section
 
 .new-destinations {
-    padding-top: 250px;
+    padding-top: 25vh;
 }
 
 .flex-container {
@@ -130,6 +130,16 @@ section {
 
 .flex-container div:first-child {
     margin-right: 50px;
+}
+
+.flex-image:first-child {
+    margin-top: -10vh;
+    margin-left: -12vw;
+}
+
+.flex-image:last-child {
+    margin-bottom: -10vh;
+    margin-right: -12vw;
 }
 
 // Vacation Days Section
