@@ -339,7 +339,8 @@ header nav a:active {
 
 .contact ul a {
   text-decoration: none;
-  color: black;
+  color: #0d457f;
+  font-size: 3rem;
 }
 
 .contact-container p:nth-of-type(1) {
@@ -396,11 +397,15 @@ header nav a:active {
 }
 
 .contact-form button {
-  font-size: 2.24rem;
   color: #0d457f;
   background-color: #FDD908;
-  border: none;
-  padding: 10px 0;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+  color: #FDD908;
+  background: transparent;
+  border: 3px solid #FDD908;
 }
 
 .destinations,
@@ -640,11 +645,15 @@ header nav a:active {
 }
 
 .blog-form button {
-  font-size: 2.24rem;
   color: #FDD908;
   background-color: #0d457f;
-  border: none;
-  padding: 10px 0;
+}
+
+.blog-form button:hover,
+.blog-form button:focus {
+  color: #0d457f;
+  background: #FDD908;
+  border: 3px solid #0d457f;
 }
 
 html {
@@ -720,6 +729,24 @@ p {
   background-color: #FDD908;
   padding: 10px 20px;
   margin-top: 25px;
+  border: 3px solid transparent;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.button:hover,
+.button:focus {
+  color: #FDD908;
+  background: transparent;
+  border: 3px solid #FDD908;
+}
+
+.vacation-days .button:hover,
+.vacation-days .button:focus,
+.win-trip .button:hover,
+.win-trip .button:focus {
+  color: #FDD908;
+  background: #0d457f;
 }
 
 .shadow-left {
@@ -857,4 +884,13 @@ footer a:focus {
 
 ::placeholder {
   opacity: 1;
+}
+
+button {
+  font-size: 2.24rem;
+  border: 3px solid transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }

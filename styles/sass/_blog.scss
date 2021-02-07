@@ -120,9 +120,13 @@
 }
 
 .blog-form button {
-    font-size: $button-text;
     color: $dandelion;
     background-color: $twilight-blue;
-    border: none;
-    padding: 10px 0;
+}
+
+.blog-form button:hover,
+.blog-form button:focus {
+    color: $twilight-blue;
+    background: $dandelion;
+    border: 3px solid $twilight-blue;
 }

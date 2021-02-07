@@ -79,6 +79,23 @@ p {
     background-color: $dandelion;
     padding: 10px 20px;
     margin-top: 25px;
+    border: 3px solid transparent;
+    transition: all .2s ease-in;
+}
+
+.button:hover,
+.button:focus {
+    color: $dandelion;
+    background: transparent;
+    border: 3px solid $dandelion;
+}
+
+.vacation-days .button:hover,
+.vacation-days .button:focus,
+.win-trip .button:hover,
+.win-trip .button:focus {
+    color: $dandelion;
+    background: $twilight-blue;
 }
 
 .shadow-left {
@@ -197,6 +214,14 @@ footer a:focus {
 // General Form Styles
 ::placeholder{
     opacity: 1;
+}
+
+button {
+    font-size: $button-text;
+    border: 3px solid transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .2s ease-in;
 }
 
 // * {

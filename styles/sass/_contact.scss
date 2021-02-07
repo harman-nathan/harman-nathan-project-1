@@ -35,7 +35,8 @@
 
 .contact ul a {
     text-decoration: none;
-    color: black;
+    color: $twilight-blue;
+    font-size: 3rem;
 }
 
 .contact-container p:nth-of-type(1) {
@@ -83,9 +84,14 @@
 }
 
 .contact-form button {
-    font-size: $button-text;
     color: $twilight-blue;
     background-color: $dandelion;
-    border: none;
-    padding: 10px 0;
+}
+
+
+.contact-form button:hover,
+.contact-form button:focus {
+    color: $dandelion;
+    background: transparent;
+    border: 3px solid $dandelion;
 }
