@@ -1,17 +1,3 @@
-// $ice-blue: #EAFEFC;
-// $dandelion: #FDD908;
-// $twilight-blue: #0D457F;
-// Font sizes
-// $main-heading: 7.9rem;
-// $secondary-heading: 4.5rem;
-// $box-heading: 4rem;
-// $side-heading: 2.5rem; 
-// $body-text: 2rem;
-// $button-text: 2.24rem;
-// $nav-text: 2rem;
-// font-family: 'IM Fell English', serif;
-// font-family: 'Roboto', sans-serif;
-
 @import "variables";
 @import "setup";
 @import "header";
@@ -28,7 +14,6 @@ body {
     font-family: "Roboto", sans-serif;
     letter-spacing: 1.5px;
     font-size: 2rem;
-    line-height: 28px ;
 }
 
 .wrapper {
@@ -69,6 +54,10 @@ h2 {
 
 h4 {
     color: $twilight-blue;
+}
+
+p {
+    line-height: 1.3;
 }
 
 .new-destinations h2,
@@ -122,6 +111,7 @@ section {
     display: flex;
     flex-wrap: wrap;
 }
+
 .flex-container:first-child {
     margin-bottom: 50px;
 }
@@ -186,7 +176,7 @@ section {
     margin: 0 25px;
 }
 
-// Footer
+// Footer Section
 footer {
     background-color: $dandelion;
     color: $twilight-blue;
@@ -204,7 +194,7 @@ footer a:focus {
     text-decoration: underline;
 }
 
-// form styles
+// General Form Styles
 ::placeholder{
     opacity: 1;
 }
