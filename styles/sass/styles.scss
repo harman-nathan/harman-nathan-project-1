@@ -119,34 +119,50 @@ section {
     padding: 100px 0;
 }
 
-// New Destinations + Our Programs Section
+// New Destinations Section
 .new-destinations {
     padding-top: 25vh;
 }
 
-.flex-container {
+.destinations-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.destinations-container div {
+    width: 46%;
+}
+
+.destinations-container div:first-child {
+    margin-bottom: 50px;
+}
+
+// Our Programs Section
+
+.program-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.flex-container:first-child {
+.program-container:first-child {
     margin-bottom: 50px;
 }
 
-.flex-container div {
+.program-container div {
     flex: calc(50% - 50px);
 }
 
-.flex-container div:first-child {
+.program-container div:first-child {
     margin-right: 50px;
 }
 
-.flex-image:first-child {
+.program-image:first-child {
     margin-top: -10vh;
     margin-left: -12vw;
 }
 
-.flex-image:last-child {
+.program-image:last-child {
     margin-bottom: -10vh;
     margin-right: -12vw;
 }
@@ -156,7 +172,7 @@ section {
     text-align: center;
 }
 
-.vacation-days div {
+.vacation-text {
     width: 80%;
     margin: 0 auto;
 }
@@ -231,17 +247,62 @@ button {
 // Media Queries
 
 @media (max-width: 1000px) {
-    .new-destinations .flex-container {
+    .destinations-container {
         flex-direction: column;
-        margin: 0 auto 50px;        
+        align-items: center;       
+    }
+
+    .destinations-container div {
         width: 80%;
     }
 
-    .flex-container div:first-child {
+    .destinations-container div:first-child {
         margin-right: 0;
     }
 
-    .flex-container div:not(:last-child) {
+    .destinations-container div:not(:last-child) {
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .trip-container {
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .trip-text {
+        margin: 50px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .vacation-text {
+        width: 100%;
+    }
+    .gallery-container {
+        flex-direction: column;
+    }
+
+    .gallery-container div:nth-child(2) {
+        margin: 25px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .destinations-container h2,
+    .vacation-days h2,
+    .trip-container h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .destinations-container h2,
+    .vacation-days h2,
+    .trip-container h2 {
+        font-size: 3rem;
     }
 }

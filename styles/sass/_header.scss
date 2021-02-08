@@ -51,9 +51,17 @@ header nav a:active {
     position: absolute;
     top: 15vh;
     right: -5vw;
-    visibility: hidden;
+    // visibility: hidden;
 }
 
 // * {
 //     border: 1px solid red;
 // }
+
+@media (min-width: 1800px) {
+    .header-image {
+        right: 12vw;
+        box-shadow: 20px 0 $dandelion;
+        // min-width: 100%;
+    }
+}
