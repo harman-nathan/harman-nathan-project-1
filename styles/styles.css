@@ -295,17 +295,18 @@ header nav a:active {
   position: absolute;
   top: 15vh;
   right: -5vw;
+  visibility: hidden;
 }
 
 .contact-header {
   background: url(../assets/contact-header.jpg) center/cover;
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
 }
 
 .contact-heading {
-  height: 40vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,6 +432,12 @@ header nav a:active {
 }
 
 @media (max-width: 750px) {
+  .contact-header {
+    height: 60vh;
+  }
+  .contact-heading {
+    height: 40vh;
+  }
   .contact-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -481,6 +488,9 @@ header nav a:active {
   }
   header li {
     margin-bottom: 10px;
+  }
+  .contact-header {
+    height: 50vh;
   }
   .contact-heading {
     height: 20vh;
@@ -604,7 +614,7 @@ header nav a:active {
   background: url(../assets/blog-header.jpg) center/cover;
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   padding: 50px 0;
 }
 
@@ -978,4 +988,21 @@ button {
   cursor: pointer;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
+}
+
+@media (max-width: 1000px) {
+  .new-destinations .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto 50px;
+    width: 80%;
+  }
+  .flex-container div:first-child {
+    margin-right: 0;
+  }
+  .flex-container div:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }

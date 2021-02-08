@@ -3,11 +3,11 @@
     background: url(../assets/contact-header.jpg) center / cover;
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
 }
 
 .contact-heading {
-    height: 40vh;
+    height: 60vh;
     display: flex;
     align-items: center;
 }
@@ -114,6 +114,12 @@
 }
 
 @media (max-width: 750px) {
+    .contact-header {
+        height: 60vh;
+    }
+    .contact-heading {
+        height: 40vh;
+    }
     .contact-container {
         flex-direction: column-reverse;
         margin-bottom: 0;
@@ -152,6 +158,9 @@
     }
     header li {
         margin-bottom: 10px;
+    }
+    .contact-header {
+        height: 50vh;
     }
     .contact-heading {
         height: 20vh;

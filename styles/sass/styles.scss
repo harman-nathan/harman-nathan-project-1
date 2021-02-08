@@ -227,3 +227,21 @@ button {
 // * {
 //     border: 1px solid red;
 // }
+
+// Media Queries
+
+@media (max-width: 1000px) {
+    .new-destinations .flex-container {
+        flex-direction: column;
+        margin: 0 auto 50px;        
+        width: 80%;
+    }
+
+    .flex-container div:first-child {
+        margin-right: 0;
+    }
+
+    .flex-container div:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
