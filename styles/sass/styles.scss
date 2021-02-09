@@ -142,30 +142,67 @@ section {
 
 .program-container {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: flex-end;
+    // flex-wrap: wrap;
 }
 
-.program-container:first-child {
-    margin-bottom: 50px;
+.program-column-1,
+.program-column-2{
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+    // align-items: flex-end;
+    width: 40%;
 }
 
-.program-container div {
-    flex: calc(50% - 50px);
+.program-column-1{
+    margin-top: -150px;
+    align-items: flex-end;
 }
 
-.program-container div:first-child {
-    margin-right: 50px;
+.program-column-2{
+    margin-bottom: -150px;
+    align-items: flex-start;
+
 }
 
-.program-image:first-child {
-    margin-top: -10vh;
-    margin-left: -12vw;
+.program-image{
+    width: 42vw;
 }
 
-.program-image:last-child {
-    margin-bottom: -10vh;
-    margin-right: -12vw;
+.program-column-1 .program-text{
+    text-align: right;
+    margin-top: 80px;
 }
+
+.program-column-2 .program-text{
+    margin-bottom: 80px;
+}
+
+
+
+// .program-container:first-child {
+//     margin-bottom: 50px;
+// }
+
+// .program-container div {
+//     flex: calc(50% - 50px);
+// }
+
+// .program-container div:first-child {
+//     margin-right: 50px;
+// }
+
+// .program-image:first-child {
+//     margin-top: -10vh;
+//     margin-left: -12vw;
+// }
+
+// .program-image:last-child {
+//     margin-bottom: -10vh;
+//     margin-right: -12vw;
+// }
 
 // Vacation Days Section
 .vacation-days {
