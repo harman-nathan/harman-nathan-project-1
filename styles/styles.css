@@ -238,7 +238,7 @@ html {
 header {
   background: url(../assets/home-header.jpg) center/cover;
   padding: 50px 0;
-  height: 50vh;
+  height: 70vh;
   position: relative;
 }
 
@@ -268,7 +268,7 @@ h1 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 40vh;
+  height: 60vh;
 }
 
 header nav a {
@@ -289,12 +289,6 @@ header nav a:active {
 
 .header-text {
   width: 40%;
-}
-
-.header-image {
-  position: absolute;
-  top: 15vh;
-  right: -5vw;
 }
 
 @media (min-width: 1800px) {

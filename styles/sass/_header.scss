@@ -1,7 +1,7 @@
 header {
     background: url(../assets/home-header.jpg) center / cover;
     padding: 50px 0;
-    height: 50vh;
+    height: 70vh;
     position: relative;
 }
 
@@ -25,7 +25,7 @@ h1 {
 .header-container {
     display: flex;
     align-items: flex-end;
-    height: 40vh;
+    height: 60vh;
 }
 
 header nav a {
@@ -47,12 +47,12 @@ header nav a:active {
     width: 40%;
 }
 
-.header-image {
-    position: absolute;
-    top: 15vh;
-    right: -5vw;
-    // visibility: hidden;
-}
+// .header-image {
+//     // position: absolute;
+//     // top: 15vh;
+//     // right: -5vw;
+//     // visibility: hidden;
+// }
 
 // * {
 //     border: 1px solid red;
