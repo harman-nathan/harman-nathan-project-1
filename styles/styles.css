@@ -699,10 +699,18 @@ header nav a:active {
   padding: 50px 0;
 }
 
-.blog-header h1 {
+.blog-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh;
+}
+
+.blog-heading h1 {
   color: white;
-  position: absolute;
-  top: 200px;
 }
 
 .our-mission {
@@ -879,6 +887,9 @@ header nav a:active {
     display: flex;
     margin-bottom: 75px;
   }
+  .our-mission-text {
+    width: 95%;
+  }
   .our-mission-image img {
     width: 100%;
   }
@@ -900,6 +911,21 @@ header nav a:active {
   .our-mission-image {
     width: 70%;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .blog-header {
+    height: 60vh;
+  }
+  .blog-heading {
+    height: 30vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog-container h2 {
+    font-size: 3.2rem;
   }
 }
 

@@ -14,10 +14,14 @@
     padding: 50px 0;
 }
 
-.blog-header h1 {
+.blog-heading {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+}
+
+.blog-heading h1{
     color: white;
-    position: absolute;
-    top: 200px;
 }
 
 // Aside Section
@@ -187,6 +191,10 @@
         margin-bottom: 75px;
     }
 
+    .our-mission-text{
+        width: 95%;
+    }
+
     .our-mission-image img{
         width: 100%;
     }
@@ -207,3 +215,22 @@
         margin-left: 0;
     }
 }
+
+@media (max-width: 430px){
+    .blog-header{
+        height: 60vh;
+    }
+
+    .blog-heading{
+        height: 30vh;
+        justify-content: center;
+    }
+
+    .blog-container h2{
+        font-size: 3.2rem;
+    }
+}
+
+// @media (min-width: 1550px){
+
+// }
