@@ -1,4 +1,11 @@
 // General Styles
+
+.blog-wrapper {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .blog-header {
     background: url(../assets/blog-header.jpg) center / cover;
     position: relative;
@@ -22,11 +29,6 @@
     // padding: 0 30px;
 }
 
-.our-mission ul {
-    list-style: none;
-    // margin-top: 20px;
-}
-
 .our-mission-text h3:nth-of-type(2) {
     margin-top: 50px;
 }
@@ -38,6 +40,7 @@
 .our-mission p,
 .our-mission ul li {
     color: white;
+    list-style-position: inside;
 }
 
 // Blog Container
@@ -52,8 +55,25 @@
     width: 35%;
 }
 
+.our-mission-image {
+    margin-left: -5vw;
+    margin-top: -3vh;
+
+}
+
+.our-mission-image img {
+    width: 35vw;
+}
+
 .blog-post {
     width: 60%;
+}
+
+.blog-image {
+    position: relative;
+    left: 15px;
+    margin-top: -35vh;
+    margin-right: -4vw;
 }
 
 .our-mission-text {
@@ -64,6 +84,10 @@
     padding: 80px;
     border-left: 5px solid $dandelion;
     border-bottom: 5px solid $dandelion;
+}
+
+.blog-post-text p {
+    margin: 20px 0;
 }
 
 // Comments Section
@@ -129,4 +153,57 @@
     color: $twilight-blue;
     background: $dandelion;
     border: 3px solid $twilight-blue;
+}
+
+// media queries
+
+@media (max-width: 950px){
+    .blog-post-text{
+        padding: 40px;
+    }
+
+    .comments{
+        padding: 40px;
+    }
+
+    .blog-form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px){
+    .blog-container{
+        flex-direction: column;
+        margin: 75px 0;
+    }
+
+    .our-mission,
+    .blog-post{
+        width: 100%;
+    }
+
+    .our-mission{
+        display: flex;
+        margin-bottom: 75px;
+    }
+
+    .our-mission-image img{
+        width: 100%;
+    }
+
+    .blog-image{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 580px){
+    .our-mission{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-mission-image{
+        width: 70%;
+        margin-left: 0;
+    }
 }
