@@ -48,27 +48,31 @@ header nav a:active {
 }
 
 .header-image {
-    margin-bottom: -200px;
-    margin-right: -150px;
+    margin-bottom: -20vh;
+    margin-right: -10vw;
 }
 
-.header-image img {
-    min-width: 450px;
-}
+// Media Queries
 
 @media (max-width: 1480px) {
     .header-image {
-        margin-right: -400px;
+        margin-right: -17vw;
+    }
+    h1 {
+        font-size: 7rem;
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
     .header-image {
-        margin-right: -500px;
+        margin-right: -28vw;
+    }
+    h1 {
+        font-size: 6.8rem;
     }
 }
 
-@media (max-width: 1125px) {
+@media (max-width: 1145px) {
     .header-container {
         flex-direction: column;
         align-items: center;
@@ -85,9 +89,9 @@ header nav a:active {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     .header-image {
-        margin-bottom: -500px;
+        margin-bottom: -35vh;
     }
 }
 
@@ -95,22 +99,24 @@ header nav a:active {
     h1 {
         font-size: 6rem;
     }
-
     header {
         height: 60vh;
     }
     .header-container {
         height: 40vh;
     }
+    .header-image {
+        margin-bottom: -20vh;
+    }
 }
 
 @media (max-width: 550px) {
     h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
-
-    .header-image img {
-        min-width: 400px;
+    .header-image {
+        // width: 100%;
+        margin-bottom: -5vh;
     }
 }
 
