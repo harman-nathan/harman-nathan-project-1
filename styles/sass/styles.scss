@@ -139,7 +139,6 @@ section {
 }
 
 // Our Programs Section
-
 .program-container {
     display: flex;
     justify-content: space-between;
@@ -255,15 +254,12 @@ button {
         flex-direction: column;
         align-items: center;       
     }
-
     .destinations-container div {
         width: 80%;
     }
-
     .destinations-container div:first-child {
         margin-right: 0;
     }
-
     .destinations-container div:not(:last-child) {
         margin-bottom: 30px;
     }
@@ -273,32 +269,26 @@ button {
     .program-container {
         flex-direction: column;
     }
-
     .program-column-1 {
         margin-bottom: 80px;
     }
-
     .program-column-1,
     .program-column-2 {
         width: 100%;
         align-items: center;
         text-align: center;
     }
-
     .program-column-1 .program-text {
         text-align: center;
     }
-
     .program-image {
         width: 100%;
     }
-
     .trip-container {
         flex-direction: column;
         margin: 0 auto;
         align-items: center;
     }
-
     .trip-text {
         margin: 50px 0 0;
         display: flex;
@@ -312,7 +302,6 @@ button {
     .gallery-container {
         flex-direction: column;
     }
-
     .gallery-container div:nth-child(2) {
         margin: 25px 0;
     }
