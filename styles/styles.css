@@ -1,3 +1,110 @@
+.destinations,
+.community,
+.blog,
+.touch {
+  position: relative;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.destinations::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #0d457f;
+  position: absolute;
+  left: -40px;
+  top: 5px;
+  z-index: 1;
+}
+
+.destinations::after {
+  content: "";
+  background: #FDD908;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: -54px;
+  top: -3px;
+}
+
+.community::before {
+  content: "\f0c0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #0d457f;
+  position: absolute;
+  left: -47px;
+  top: 5px;
+  z-index: 1;
+}
+
+.community::after {
+  content: "";
+  background: #FDD908;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: -54px;
+  top: -3px;
+}
+
+.blog::before {
+  content: "\f15b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #0d457f;
+  position: absolute;
+  left: -39px;
+  top: 3px;
+  z-index: 1;
+}
+
+.blog::after {
+  content: "";
+  background: #FDD908;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: -54px;
+  top: -3px;
+}
+
+.touch::before {
+  content: "\f095";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3rem;
+  color: #0d457f;
+  position: absolute;
+  left: -43px;
+  top: 5px;
+  z-index: 1;
+}
+
+.touch::after {
+  content: "";
+  background: #FDD908;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: -54px;
+  top: -3px;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -420,7 +527,11 @@ header nav a:active {
 }
 
 .contact ul li {
-  padding: 0 2rem 1rem 0;
+  padding-bottom: 1rem;
+}
+
+.contact ul li:not(:last-child) {
+  padding-right: 2rem;
 }
 
 .contact ul a {
@@ -468,21 +579,22 @@ address p:nth-of-type(1) {
           justify-content: space-between;
 }
 
-.contact-form input {
+.contact-form input,
+.contact-form textarea {
   border: none;
+  color: white;
+  background-color: transparent;
+}
+
+.contact-form input {
   padding: 0 0 15px 15px;
   border-bottom: 2px solid #FDD908;
-  background-color: transparent;
-  color: white;
   width: 48%;
 }
 
 .contact-form textarea {
-  border: none;
   padding: 15px 0 0 15px;
   border: 2px solid #FDD908;
-  background-color: transparent;
-  color: white;
   margin: 40px 0;
 }
 
@@ -580,113 +692,6 @@ address p:nth-of-type(1) {
   header nav a {
     padding: 0;
   }
-}
-
-.destinations,
-.community,
-.blog,
-.touch {
-  position: relative;
-}
-
-.icon::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.destinations::before {
-  content: "\f3c5";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 3rem;
-  color: #0d457f;
-  position: absolute;
-  left: -40px;
-  top: 5px;
-  z-index: 1;
-}
-
-.destinations::after {
-  content: "";
-  background: #FDD908;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: -54px;
-  top: -3px;
-}
-
-.community::before {
-  content: "\f0c0";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 3rem;
-  color: #0d457f;
-  position: absolute;
-  left: -47px;
-  top: 5px;
-  z-index: 1;
-}
-
-.community::after {
-  content: "";
-  background: #FDD908;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: -54px;
-  top: -3px;
-}
-
-.blog::before {
-  content: "\f15b";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 3rem;
-  color: #0d457f;
-  position: absolute;
-  left: -39px;
-  top: 3px;
-  z-index: 1;
-}
-
-.blog::after {
-  content: "";
-  background: #FDD908;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: -54px;
-  top: -3px;
-}
-
-.touch::before {
-  content: "\f095";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 3rem;
-  color: #0d457f;
-  position: absolute;
-  left: -43px;
-  top: 5px;
-  z-index: 1;
-}
-
-.touch::after {
-  content: "";
-  background: #FDD908;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  left: -54px;
-  top: -3px;
 }
 
 .blog-wrapper {
