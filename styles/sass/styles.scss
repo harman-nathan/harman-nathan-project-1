@@ -265,6 +265,13 @@ button {
     }
 }
 
+@media (max-width: 900px) {
+    .new-destinations {
+        padding-top: 100px;
+    }
+}
+// made changes here after submitting.. 268 - 270
+
 @media (max-width: 850px) {
     .program-container {
         flex-direction: column;
@@ -323,7 +330,6 @@ button {
     }
 }
 
-// Small fix for our program image width at large screen sizes.
 @media (min-width: 1600px) {
     .program-image {
         width: 100%;
