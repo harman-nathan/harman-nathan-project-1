@@ -703,9 +703,6 @@ address p:nth-of-type(1) {
 .blog-header {
   background: url(../assets/blog-header.jpg) center/cover;
   position: relative;
-  width: 100%;
-  height: 70vh;
-  padding: 50px 0;
 }
 
 .blog-heading {
@@ -722,24 +719,6 @@ address p:nth-of-type(1) {
   color: white;
 }
 
-.our-mission {
-  background-color: #0d457f;
-}
-
-.our-mission-text h3:nth-of-type(2) {
-  margin-top: 50px;
-}
-
-.our-mission h3 {
-  color: #FDD908;
-}
-
-.our-mission p,
-.our-mission ul li {
-  color: white;
-  list-style-position: inside;
-}
-
 .blog-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,7 +732,29 @@ address p:nth-of-type(1) {
   margin: 150px 0;
 }
 
+.blog-post {
+  width: 60%;
+}
+
+.blog-image {
+  position: relative;
+  left: 15px;
+  margin-top: -35vh;
+  margin-right: -4vw;
+}
+
+.blog-post-text {
+  padding: 80px;
+  border-left: 5px solid #FDD908;
+  border-bottom: 5px solid #FDD908;
+}
+
+.blog-post-text p {
+  margin: 20px 0;
+}
+
 .our-mission {
+  background-color: #0d457f;
   width: 35%;
 }
 
@@ -766,29 +767,24 @@ address p:nth-of-type(1) {
   width: 35vw;
 }
 
-.blog-post {
-  width: 60%;
-}
-
-.blog-image {
-  position: relative;
-  left: 15px;
-  margin-top: -35vh;
-  margin-right: -4vw;
-}
-
 .our-mission-text {
   padding: 30px;
 }
 
-.blog-post-text {
-  padding: 80px;
-  border-left: 5px solid #FDD908;
-  border-bottom: 5px solid #FDD908;
+.our-mission-text h3:nth-of-type(2) {
+  margin-top: 50px;
 }
 
-.blog-post-text p {
-  margin: 20px 0;
+.our-mission h3 {
+  color: #FDD908;
+  margin-bottom: 10px;
+}
+
+.our-mission p,
+.our-mission ul li {
+  color: white;
+  list-style-position: inside;
+  line-height: 1.5;
 }
 
 .comments {
@@ -817,7 +813,6 @@ address p:nth-of-type(1) {
 }
 
 .blog-form form {
-  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,32 +820,25 @@ address p:nth-of-type(1) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 50px;
 }
 
-.form-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.blog-form input,
+.blog-form textarea {
+  border: none;
+  background-color: transparent;
+  color: black;
 }
 
 .blog-form input {
-  border: none;
   padding: 0 0 15px 15px;
   border-bottom: 2px solid #FDD908;
-  background-color: transparent;
-  color: black;
   width: 48%;
 }
 
 .blog-form textarea {
-  border: none;
   padding: 15px 0 0 15px;
   border: 2px solid #FDD908;
-  background-color: transparent;
-  color: black;
   margin: 40px 0;
 }
 
@@ -867,9 +855,7 @@ address p:nth-of-type(1) {
 }
 
 @media (max-width: 950px) {
-  .blog-post-text {
-    padding: 40px;
-  }
+  .blog-post-text,
   .comments {
     padding: 40px;
   }

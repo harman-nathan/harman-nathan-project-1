@@ -1,5 +1,4 @@
 // General Styles
-
 .blog-wrapper {
     max-width: 1400px;
     width: 90%;
@@ -9,9 +8,6 @@
 .blog-header {
     background: url(../assets/blog-header.jpg) center / cover;
     position: relative;
-    width: 100%;
-    height: 70vh;
-    padding: 50px 0;
 }
 
 .blog-heading {
@@ -24,49 +20,12 @@
     color: white;
 }
 
-// Aside Section
-.our-mission {
-    // width: 35%;
-    // margin-left: 10%;
-    background-color: $twilight-blue;
-    // margin-top: 150px;
-    // padding: 0 30px;
-}
-
-.our-mission-text h3:nth-of-type(2) {
-    margin-top: 50px;
-}
-
-.our-mission h3 {
-    color: $dandelion;
-}
-
-.our-mission p,
-.our-mission ul li {
-    color: white;
-    list-style-position: inside;
-}
-
 // Blog Container
 .blog-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin: 150px 0;
-}
-
-.our-mission {
-    width: 35%;
-}
-
-.our-mission-image {
-    margin-left: -5vw;
-    margin-top: -3vh;
-
-}
-
-.our-mission-image img {
-    width: 35vw;
 }
 
 .blog-post {
@@ -80,10 +39,6 @@
     margin-right: -4vw;
 }
 
-.our-mission-text {
-    padding: 30px;
-}
-
 .blog-post-text {
     padding: 80px;
     border-left: 5px solid $dandelion;
@@ -92,6 +47,41 @@
 
 .blog-post-text p {
     margin: 20px 0;
+}
+
+// Aside Section
+.our-mission {
+    background-color: $twilight-blue;
+    width: 35%;
+}
+
+.our-mission-image {
+    margin-left: -5vw;
+    margin-top: -3vh;
+}
+
+.our-mission-image img {
+    width: 35vw;
+}
+
+.our-mission-text {
+    padding: 30px;
+}
+
+.our-mission-text h3:nth-of-type(2) {
+    margin-top: 50px;
+}
+
+.our-mission h3 {
+    color: $dandelion;
+    margin-bottom: 10px;
+}
+
+.our-mission p,
+.our-mission ul li {
+    color: white;
+    list-style-position: inside;
+    line-height: 1.5;
 }
 
 // Comments Section
@@ -118,32 +108,27 @@
 
 // Form Styles
 .blog-form form { 
-    padding-top: 50px;
     display: flex;
     flex-direction: column;
-    // background-color: $twilight-blue;
+    margin-top: 50px;
 }
 
-.form-flex {
-    display: flex;
-    justify-content: space-between;
+.blog-form input,
+.blog-form textarea {
+    border: none;
+    background-color: transparent;
+    color: black;
 }
 
 .blog-form input {
-    border: none;
     padding: 0 0 15px 15px;
     border-bottom: 2px solid $dandelion;
-    background-color: transparent;
-    color: black;
     width: 48%;
 }
 
 .blog-form textarea {
-    border: none;
     padding: 15px 0 0 15px;
     border: 2px solid $dandelion;
-    background-color: transparent;
-    color: black;
     margin: 40px 0;
 }
 
@@ -159,78 +144,61 @@
     border: 3px solid $twilight-blue;
 }
 
-// media queries
-
+// Media Queries
 @media (max-width: 950px){
-    .blog-post-text{
+    .blog-post-text,
+    .comments {
         padding: 40px;
     }
-
-    .comments{
-        padding: 40px;
-    }
-
     .blog-form input {
         width: 100%;
     }
 }
 
 @media (max-width: 750px){
-    .blog-container{
+    .blog-container {
         flex-direction: column;
         margin: 75px 0;
     }
-
     .our-mission,
-    .blog-post{
+    .blog-post {
         width: 100%;
     }
-
-    .our-mission{
+    .our-mission {
         display: flex;
         margin-bottom: 75px;
     }
-
-    .our-mission-text{
+    .our-mission-text {
         width: 95%;
     }
-
-    .our-mission-image img{
+    .our-mission-image img {
         width: 100%;
     }
-
-    .blog-image{
+    .blog-image {
         margin-top: 0;
     }
 }
 
 @media (max-width: 580px){
-    .our-mission{
+    .our-mission {
         flex-direction: column;
         align-items: center;
     }
-
-    .our-mission-image{
+    .our-mission-image {
         width: 70%;
         margin-left: 0;
     }
 }
 
-@media (max-width: 430px){
-    .blog-header{
+@media (max-width: 430px) {
+    .blog-header {
         height: 60vh;
     }
-
-    .blog-heading{
+    .blog-heading {
         height: 30vh;
         justify-content: center;
     }
-
-    .blog-container h2{
+    .blog-container h2 {
         font-size: 3.2rem;
     }
 }
-
-// @media (min-width: 1550px){
-
-// }
