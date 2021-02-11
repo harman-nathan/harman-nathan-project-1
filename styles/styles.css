@@ -381,9 +381,6 @@ header nav a:active {
 .contact-header {
   background: url(../assets/contact-header.jpg) center/cover;
   position: relative;
-  width: 100%;
-  height: 70vh;
-  padding: 50px 0;
 }
 
 .contact-heading {
@@ -432,7 +429,11 @@ header nav a:active {
   font-size: 3rem;
 }
 
-.contact-container p:nth-of-type(1) {
+address {
+  font-style: normal;
+}
+
+address p:nth-of-type(1) {
   margin-bottom: 30px;
 }
 
